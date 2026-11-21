@@ -1,6 +1,6 @@
 ---
 name: team-git-flow
-description: Guides and automates safe team Git workflows for HackCC hackathons. Prevents merge conflicts, enforces branch isolation off main, guides conflict resolution, and prevents committing API keys or .env files.
+description: Guides and automates safe team Git workflows for HackCC. Prevents merge conflicts, enforces branch isolation off main, guides conflict resolution, and prevents committing API keys or .env files.
 ---
 
 # HackCC Team Git Collaboration Skill
@@ -72,6 +72,8 @@ If Git reports a conflict during a merge or rebase:
 3. Choose **Accept Incoming Change**, **Accept Current Change**, or **Accept Both Changes**.
 4. Save the file, run `git add <file>`, and then `git commit -m "fix: resolve merge conflict"`.
 5. *Emergency Exit:* To abort and go back to safety, run `git merge --abort`.
+
+Or (recommended): have the agent in your IDE help you resolve the conflict.
 
 ### Accidental Secret or `.env` Commit
 If you accidentally added `.env` to git staging or a commit before pushing:
